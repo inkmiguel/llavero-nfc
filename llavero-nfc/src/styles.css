@@ -1,0 +1,14 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 3rem;
+  }
+  
