@@ -1,14 +1,38 @@
-.background {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: #D97B5E;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para pantallas grandes (como escritorios) */
+h1 {
+  font-size: 3rem;
+}
+
+/* Media Query para pantallas de móvil */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;  /* Agrega un pequeño padding para evitar que el contenido quede pegado a los bordes */
   }
-  
+
   h1 {
-    color: black;
-    font-size: 3rem;
+    font-size: 2rem;  /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    text-align: center;  /* Asegura que el texto esté centrado en pantallas pequeñas */
   }
-  
+}
+
+/* Media Query para pantallas más pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;  /* Ajusta el padding para pantallas muy pequeñas */
+  }
+
+  h1 {
+    font-size: 1.8rem;  /* Reduce aún más el tamaño de la fuente */
+  }
+}

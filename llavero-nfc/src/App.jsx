@@ -1,7 +1,7 @@
 import React from 'react';
+import './styles.css'
 
 function App() {
-  window.alert('App.js esta funcionando')
   return (
     <div>
       <h1>¡React está funcionando!</h1>
