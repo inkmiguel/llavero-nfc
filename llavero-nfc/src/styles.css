@@ -1,38 +1,73 @@
-body {
-  background-color: #D97B5E;
-  color: white;
+/* Eliminar los márgenes y asegurar que todo el fondo sea azul */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
 }
 
-/* Estilo para pantallas grandes (como escritorios) */
+/* Ajustes generales */
 h1 {
-  font-size: 3rem;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-/* Media Query para pantallas de móvil */
-@media (max-width: 768px) {
-  body {
-    padding: 20px;  /* Agrega un pequeño padding para evitar que el contenido quede pegado a los bordes */
-  }
-
-  h1 {
-    font-size: 2rem;  /* Reduce el tamaño de la fuente para pantallas pequeñas */
-    text-align: center;  /* Asegura que el texto esté centrado en pantallas pequeñas */
-  }
+h3 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 90%;
 }
 
-/* Media Query para pantallas más pequeñas (móviles en modo retrato) */
-@media (max-width: 480px) {
-  body {
-    padding: 15px;  /* Ajusta el padding para pantallas muy pequeñas */
+/* Estilos para el botón */
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 80%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border: 2px solid green;
+  background-color: transparent;
+  color: green;
+}
+
+/* 📱 Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 7vw;
   }
 
-  h1 {
-    font-size: 1.8rem;  /* Reduce aún más el tamaño de la fuente */
+  h3 {
+    font-size: 4vw;
+  }
+
+  button {
+    font-size: 4vw;
+    height: 45px;
   }
 }
