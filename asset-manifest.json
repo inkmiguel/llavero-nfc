@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/llavero-nfc/static/css/main.26c624bf.css",
+    "main.js": "/llavero-nfc/static/js/main.273a44f7.js",
+    "index.html": "/llavero-nfc/index.html",
+    "main.26c624bf.css.map": "/llavero-nfc/static/css/main.26c624bf.css.map",
+    "main.273a44f7.js.map": "/llavero-nfc/static/js/main.273a44f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26c624bf.css",
+    "static/js/main.273a44f7.js"
+  ]
+}
