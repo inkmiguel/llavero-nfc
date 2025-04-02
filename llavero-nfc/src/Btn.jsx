@@ -3,8 +3,8 @@ import './Button.css';
 
 function Button() {
   const handleClick = () => {
-    const phoneNumber = '+5218334393035';
-    const message = encodeURIComponent('¡Hola Miguel! Encontré tu mochila.');
+    const phoneNumber = '+528334393035';
+    const message = encodeURIComponent('¡Hola Miguel! Encontré tu chingaderas.');
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.location.href = url;
   };
